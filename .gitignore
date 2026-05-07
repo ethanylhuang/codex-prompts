@@ -1,0 +1,10 @@
+*
+!.gitignore
+!AGENTS.md
+!skills/
+!skills/**/
+!skills/**
+skills/.system/
+skills/.system/**
+.DS_Store
+**/.DS_Store
