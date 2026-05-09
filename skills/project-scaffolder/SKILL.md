@@ -19,6 +19,7 @@ description: Generates markdown implementation plans (M*_IMPLEMENTATION_PLAN.md)
 
 5. Testing
 - Define clear methods of gathering evidence
+- Test how the user would use the project (e.g. if it's a web app, open the app in localhost with the chrome browser tool)
 
 6. Acceptance Criteria
 - Define measurable completion criteria.
