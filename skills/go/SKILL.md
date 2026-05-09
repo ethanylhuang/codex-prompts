@@ -9,7 +9,7 @@ description: Executes scaffolded milestone plans as an implementation orchestrat
 - Do not weaken product scope or validation criteria without asking the user.
 - For non-trivial cohesive code changes, spawn `implementer` with objective, ownership, constraints, relevant files, acceptance criteria, and validation commands.
 - Keep trivial, tightly coupled, or ambiguous work in the main agent.
-- Use the largest clear implementer slice; avoid tiny handoffs and broad ambiguity.
+- Use cohesive, independently testable implementer slices with clear ownership; avoid tiny handoffs.
 - Keep implementer context fresh; do not pass the full conversation unless needed.
 - Track summaries and decisions in main; leave low-level coding detail to implementer.
 - After implementer returns, invoke `validator` in `slice` mode with its validation packet.
