@@ -4,7 +4,7 @@ description: Generates markdown implementation plans (M*_IMPLEMENTATION_PLAN.md)
 ---
 
 - Generate a concise Markdown implementation plan under docs/ focused on objectives, scope, validation, and flexible implementation guidance.
-- Ask clarifying questions when missing requirements would materially affect scope or acceptance criteria.
+- Ask clarifying questions when missing requirements that would materially affect scope or acceptance criteria.
 - Break complex projects into feasible milestones.
 - Validate core functionality first; defer polish and automation to later milestones.
 - The Markdown file should follow this format:

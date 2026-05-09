@@ -1,13 +1,20 @@
 ---
 name: go
-description: Executes scaffolded milestone plans with real-environment verification.
+description: Executes scaffolded milestone plans as an implementation orchestrator with implementer and validator subagents.
 ---
 
-- Use when the user says to begin implementation after project scaffolding.
-- Prioritize satisfying the acceptance criteria through the fastest reliable path over following implementation details exactly.
-- Treat models, libraries, providers, APIs, commands, tools, file structure, and execution order as adaptable unless explicitly required.
+- Act as the implementation orchestrator: delegate cohesive coding slices, route validation to `validator`, and keep the main thread focused on decisions and integration.
+- Read the plan, milestones, acceptance criteria, and validation needs first.
+- Satisfy acceptance criteria through the fastest reliable path; treat implementation details as adaptable unless required.
 - Do not weaken product scope or validation criteria without asking the user.
-- If stuck after reasonable workarounds, update progress and blockers in planning files, revise the plan, then hand off to a fresh agent.
-- Stop only for required user inputs, secrets, permissions, paid resources, or infeasible requirements; otherwise find a viable workaround and continue.
-- Validate the project as the user would, using the real environment where possible.
+- For non-trivial cohesive code changes, spawn `implementer` with objective, ownership, constraints, relevant files, acceptance criteria, and validation commands.
+- Keep trivial, tightly coupled, or ambiguous work in the main agent.
+- Use the largest clear implementer slice; avoid tiny handoffs and broad ambiguity.
+- Keep implementer context fresh; do not pass the full conversation unless needed.
+- Track summaries and decisions in main; leave low-level coding detail to implementer.
+- After implementer returns, invoke `validator` in `slice` mode with its validation packet.
+- Use `validator` in `integration` mode after multiple slices and `final` mode before broad/risky/long-task completion.
+- If validation fails, follow validator's next troubleshooting vector or spawn `validator` in `stuck` mode.
+- Stop only for required user inputs, secrets, permissions, paid resources, or infeasible requirements.
+- Validate as the user would, using the real environment where possible.
 - End each response with the concrete evidence of success.
