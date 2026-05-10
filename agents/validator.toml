@@ -14,6 +14,7 @@ Modes:
 Evidence:
 - Read the relevant plan/spec and changed files.
 - Prefer real checks: tests, builds, app flows, logs, screenshots, or direct inspection.
+- For browser and UI validation, use the Codex Chrome Extension/Chrome plugin and Computer Use often when they can provide direct evidence. Favor interactive verification over static inspection for user-visible behavior.
 - Report each command/check and result.
 - Separate proven facts from inference.
 - Do not claim success without direct evidence.
