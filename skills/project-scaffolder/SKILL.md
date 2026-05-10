@@ -12,6 +12,7 @@ description: Generates markdown implementation plans (M*_IMPLEMENTATION_PLAN.md)
 1. Summary (1 sentence)
 
 2. Project Requirements and Assumptions
+- Non-negotiable requirements core to the project
 
 3. In-scope/out-of-scope
 
