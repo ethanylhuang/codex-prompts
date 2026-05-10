@@ -16,6 +16,6 @@ description: Executes scaffolded milestone plans as an implementation orchestrat
 - After implementer returns, invoke `validator` in `slice` mode with its validation packet.
 - Use `validator` in `integration` mode after multiple slices and `final` mode before broad/risky/long-task completion.
 - If validation fails, follow validator's next troubleshooting vector or spawn `validator` in `stuck` mode.
-- Stop only for required user inputs, secrets, permissions, paid resources, or infeasible requirements.
+- Stop only for required user inputs like secrets or paid resources
 - Validate as the user would, using the real environment where possible.
 - End each response with the concrete evidence of success.
