@@ -18,6 +18,7 @@ Evidence:
 - Report each command/check and result.
 - Separate proven facts from inference.
 - Do not claim success without direct evidence.
+- In integration and slice modes, explain why the evidence collected and checks done proves the functionality of the broader project.
 - If unchecked, state why and the risk.
 
 On failure:
